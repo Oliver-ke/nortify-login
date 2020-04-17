@@ -1,0 +1,92 @@
+@import './variables';
+.landing {
+	position: relative;
+	background: url('../assets/bg2.jpg') no-repeat center center/cover;
+	height: 100vh;
+	&.active{
+		display: block;
+	}
+	.dark-overlay {
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	background: rgba(45, 34, 84, 0.8);
+		.landing-inner {
+			color: #fff;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			width: 100%;
+			align-items: center;
+			@media screen and (max-width: 700px) {
+				display: block;
+				position: absolute;
+				top: 150px;
+				right: 0;
+			}
+			.caption {
+				width: 80%;
+				text-align: justify;
+				text-align: center;
+				span {
+					color: $secondary-color;
+				}
+				h1 {
+					font-size: 70px;
+					line-height: 100px;
+					font-weight: bold;
+					span{
+						color: $secondary-color;
+					}
+					@media screen and (max-width: 700px) {
+						font-size: 25px;
+						line-height: 35px;		
+					}
+				}
+				@media screen and (max-width: 700px) {
+					width: 100%;
+					margin-bottom: 2rem;
+					p {
+						font-size: 15px;
+					}
+				}
+			}
+			.buttons{
+				display: flex;
+				justify-content: center;
+				width: 70%;
+				@media screen and (max-width: 700px) {
+					width: 100%;
+					flex-direction: column;
+					align-items: center;
+				}
+				.btn{
+					background-color: $secondary-color;
+					font-size: 30px;
+					border-radius: 5px;
+					width: 40%;
+					color: #fff;
+					border: none;
+					padding: 1rem;
+					margin: 1rem;
+					cursor: pointer;
+					@media screen and (max-width: 700px) {
+						font-size: 20px;
+						width: 80%;
+					}
+					&:hover {
+						opacity: 0.9;
+						transform: scale(0.98);
+					}
+					&.candidate-login{
+						background-color: $primary-color;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+}

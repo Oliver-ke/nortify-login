@@ -1,0 +1,113 @@
+section.login{
+  &.active{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+  	.form-container {
+				border-radius: 2px;
+				width: 40%;
+				height: 70vh;
+				padding: 2rem 0;
+        background: #FAFBFD;
+        border: 2px solid $primary-color;
+        border-top: none;
+        display: none;
+        &.show{
+          display: block;
+        }
+        @media screen and (max-width: 700px) {
+					width: 90%;
+          margin-bottom: 1rem;
+          padding: 1rem 0;
+          height: 60vh;
+				}
+				form {
+					display: flex;
+					justify-content: space-evenly;
+					flex-direction: column;
+					height: 100%;
+					align-self: center;
+          padding: 0 2rem;
+          @media screen and (max-width: 700px) {
+            padding: 0 0.5rem;
+            justify-content: center;
+          }
+          label{
+            font-size: 20px;
+            font-weight: 300;
+          }
+          span{
+            color: $secondary-color;
+          }
+					h3 {
+						text-align: center;
+						span {
+							color: $secondary-color;
+						}
+					}
+					input[type='text'], input[type='number'] {
+						margin: 0.3rem 0;
+						width: 100%;
+						border: 3px solid $primary-color;
+						font-size: 1rem;
+						border-radius: 5px;
+						padding: 15px;
+					}
+					input[type="submit"] {
+						display: inline-block;
+						border: 0;
+						background: $secondary-color;
+						color: #fff;
+						border-radius: 5px;
+						padding: 15px 30px;
+						text-transform: uppercase;
+						cursor: pointer;
+						font-weight: bold;
+						font-size: 16px;
+						margin-top: 10px;
+						&:hover {
+							transform: scale(0.98);
+						}
+					}
+				}
+			
+    }
+    .top-option-btn{
+      display: flex;
+      height: 60px;
+      margin-top: 4rem;
+      justify-content: space-between;
+      width: 40%;
+      @media screen and (max-width: 700px) {
+        width: 90%;
+        margin-top: 8rem;
+      }
+      .btn{
+        background-color: #f4f4f4;
+        font-size: 20px;
+        width: 50%;
+        font-weight: bold;
+        color: #000;
+        border: none;
+        padding: 1rem;
+        cursor: pointer;
+        outline: none;
+        border-bottom: 2px solid $primary-color;
+        @media screen and (max-width: 700px) {
+          font-size: 15px;
+        }
+        &:hover {
+          transform: scale(0.99);
+          opacity: 0.8;
+        }
+        &.selected{
+          border: 2px solid $primary-color;
+          border-bottom: 2px solid #FAFBFD;
+          background-color: #FAFBFD;
+        }
+      }
+    }
+}
