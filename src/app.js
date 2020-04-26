@@ -1,3 +1,4 @@
+
 import {
 	homeNav,
 	loginNav,
@@ -5,7 +6,9 @@ import {
 	candidateLogin,
 	schoolLogin,
 	schoolLoginBtnForm,
-	candidateLoginBtnForm
+	candidateLoginBtnForm,
+	candidateForm,
+	schoolForm
 } from './js/selector'
 
 import {
@@ -15,7 +18,9 @@ import {
   handleSupportClicked,
   handleSchoolLoginClicked,
   handleSchoolLoginFormBtn,
-  handleCandidateLoginFormBtn
+	handleCandidateLoginFormBtn,
+	handleCandidateFormSubmit,
+	handleSchoolFormSubmit
 } from './js/manager';
 
 import './scss/app.scss';
@@ -30,6 +35,9 @@ const app = async () => {
 
 	schoolLoginBtnForm.addEventListener('click',handleSchoolLoginFormBtn )
 	candidateLoginBtnForm.addEventListener('click', handleCandidateLoginFormBtn )
+
+	candidateForm.addEventListener('submit', handleCandidateFormSubmit);
+	schoolForm.addEventListener('submit', handleSchoolFormSubmit);
 };
 
 // Load app

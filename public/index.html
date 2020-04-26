@@ -1,137 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="theme-color" content="#2d2254">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-            integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
-            crossorigin="anonymous"
-        >
-        <title>Nortify - Login</title>
-    </head>
-    <body>
-        <nav class="navbar bg-dark">
-            <h1>
-                <a href="!#">
-                    N
-                    <i class="fas fa-graduation-cap logo"></i>
-                    rtify
-                    <span class="dot">.</span>
-                </a>
-            </h1>
-            <ul>
-                <li class="active home">
-                    <a href="javascript:;">Home</a>
-                </li>
-                <li class="login">
-                    <a href="javascript:;">Login</a>
-                </li>
-                <li class="support">
-                    <a href="javascript:;">Support</a>
-                </li>
-            </ul>
-        </nav>
-        <section class="landing active">
-            <div class="dark-overlay">
-                <div class="landing-inner">
-                    <div class="caption">
-                        <h1>
-                            Abia State Unified Promotion
-                            <br>
-                            Examination
-                            <span>2019/2020</span>
-                            <br>
-                            Registration is on.
-                        </h1>
-                        <p>
-                            <span>|</span>
-                            Register
-                            <span>|</span>
-                            Login
-                            <span>|</span>
-                            View Portal
-                            <span>|</span>
-                            Fill Bio
-                        </p>
-                    </div>
-                    <div class="buttons">
-                        <button class="btn school-login">
-                            School Login
-                        </button>
-                        <button class="btn candidate-login">
-                            Candidate Login
-                        </button>
-                    </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#2d2254">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+        crossorigin="anonymous">
+    <title>Nortify - Login</title>
+</head>
+
+<body>
+    <nav class="navbar bg-dark">
+        <h1>
+            <a href="!#">
+                N
+                <i class="fas fa-graduation-cap logo"></i>
+                rtify
+                <span class="dot">.</span>
+            </a>
+        </h1>
+        <ul>
+            <li class="active home">
+                <a href="javascript:;">Home</a>
+            </li>
+            <li class="login">
+                <a href="javascript:;">Login</a>
+            </li>
+            <li class="support">
+                <a href="javascript:;">Support</a>
+            </li>
+        </ul>
+    </nav>
+    <section class="landing active">
+        <div class="dark-overlay">
+            <div class="landing-inner">
+                <div class="caption">
+                    <h1>
+                        Abia State Unified Promotion
+                        <br>
+                        Examination
+                        <span>2019/2020</span>
+                        <br>
+                        Registration is on.
+                    </h1>
+                    <p>
+                        <span>|</span>
+                        Register
+                        <span>|</span>
+                        Login
+                        <span>|</span>
+                        View Portal
+                        <span>|</span>
+                        Fill Bio
+                    </p>
+                </div>
+                <div class="buttons">
+                    <button class="btn school-login">
+                        School Login
+                    </button>
+                    <button class="btn candidate-login">
+                        Candidate Login
+                    </button>
                 </div>
             </div>
-        </section>
-        <section class=" login">
-            <div class="top-option-btn">
-                <button class="btn  school-login-btn">School Login</button>
-                <button class="btn selected candidate-login-btn">Candidate Login</button>
-            </div>
-            <div class="form-container candidate-form show">
-                <form action="POST">
-                    <h3>
-                        <span>
-                            <i class="fas fa-user"></i>
-                        </span>
-                        Candidate Login
-                    </h3>
-                    <div class="indicator">
-                        <div class="spinner"></div>
-                        <span class="error"></span>
+        </div>
+    </section>
+    <section class=" login">
+        <div class="top-option-btn">
+            <button class="btn  school-login-btn">School Login</button>
+            <button class="btn selected candidate-login-btn">Candidate
+                Login</button>
+        </div>
+        <div class="form-container candidate-form show">
+            <form action="POST">
+                <h3>
+                    <span>
+                        <i class="fas fa-user"></i>
+                    </span>
+                    Candidate Login
+                </h3>
+                <div class="indicator candidate-indi">
+                    <span class="error"></span>
+                    <div class="spinner">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
                     </div>
-                    <label for="location">
-                        <span>|</span>
-                        Examination Number
-                    </label>
-                    <input type="text" name="exam-number" placeholder="Enter your examination number">
-                    <label for="location">
-                        <span>|</span>
-                        Candidate Pin
-                    </label>
-                    <input type="text" name="pin" placeholder="****************">
-                    <input type="submit" value="Login">
-                </form>
-            </div>
-            <div class="form-container school-form">
-                <form action="POST">
-                    <h3>
-                        <span class="icon">
-                            <i class="fas fa-user"></i>
-                        </span>
-                        School Login
-                    </h3>
-                    <div class="indicator">
-                        <div class="spinner"></div>
-                        <span class="error"></span>
+                </div>
+                <label for="location">
+                    <span>|</span>
+                    Examination Number
+                </label>
+                <input type="text" name="exam-number"
+                    placeholder="Enter your examination number">
+                <label for="location">
+                    <span>|</span>
+                    Candidate Pin
+                </label>
+                <input type="text" name="pin" placeholder="****************">
+                <input type="submit" value="Login">
+            </form>
+        </div>
+        <div class="form-container school-form">
+            <form action="POST">
+                <h3>
+                    <span class="icon">
+                        <i class="fas fa-user"></i>
+                    </span>
+                    School Login
+                </h3>
+                <div class="indicator school-indi">
+                    <span class="error"></span>
+                    <div class="spinner">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
                     </div>
-                    <label for="school-code">
-                        <span>|</span>
-                        School Code
-                    </label>
-                    <input type="text" name="school-code" placeholder="Enter your school code">
-                    <label for="pass-code">
-                        <span>|</span>
-                        Pass Code
-                    </label>
-                    <input type="text" name="pass-code" placeholder="Enter your pass code">
-                    <label for="location">
-                        <span>|</span>
-                        Phone Number
-                    </label>
-                    <input type="number" name="pin" placeholder="Enter phone number">
-                    <input type="submit" value="Login">
-                </form>
-            </div>
-        </section>
-        <section class="support">
-            <h1>Coming soon, Please enjoy</h1>
-        </section>
-        <script src="../src/app.js"></script>
-    </body>
+                </div>
+                <label for="school-code">
+                    <span>|</span>
+                    School Code
+                </label>
+                <input type="text" name="school-code"
+                    placeholder="Enter your school code">
+                <label for="pass-code">
+                    <span>|</span>
+                    Pass Code
+                </label>
+                <input type="text" name="pass-code"
+                    placeholder="Enter your pass code">
+                <label for="phone-number">
+                    <span>|</span>
+                    Phone Number
+                </label>
+                <input type="number" name="phone-number"
+                    placeholder="Enter phone number">
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </section>
+    <section class="support">
+        <h1>Coming soon, Please enjoy</h1>
+    </section>
+    <script src="../src/app.js"></script>
+</body>
+
 </html>

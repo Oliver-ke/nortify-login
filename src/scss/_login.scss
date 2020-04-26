@@ -4,12 +4,12 @@ section.login{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
   }
   	.form-container {
 				border-radius: 2px;
 				width: 40%;
-				height: 70vh;
+				height: 90%;
 				padding: 2rem 0;
         background: #FAFBFD;
         border: 2px solid $primary-color;

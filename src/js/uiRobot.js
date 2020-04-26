@@ -1,6 +1,15 @@
 
 export default (action, element, payload=null) => {
   switch(action){
+    case 'ACTIVATE':
+      if(payload){
+        element.textContent = payload;
+      }
+      element.classList.add('active');
+      return;
+    case 'DE_ACTIVATE':
+      element.classList.remove('active');
+      return;
     case 'SHOW-PAGE':
       document.querySelector(`section.active`).classList.remove('active');
       element.classList.add('active');
