@@ -62,6 +62,7 @@ const handleSupportClicked = (e) => {
 
 // form handlers
 const handleSchoolFormSubmit = async (e) => {
+  e.preventDefault();
   uiRobot('DE_ACTIVATE', schoolSpinner);
   uiRobot('DE_ACTIVATE', schoolError);
   const SchoolCode = fields.schoolCode.value;
